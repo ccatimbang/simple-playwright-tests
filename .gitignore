@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+**/node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
@@ -63,3 +64,16 @@ client/.env
 # Local development
 .local/
 *.local
+
+# Cache directories
+.cache/
+**/.cache/
+
+# Test results and reports
+test-results/
+playwright-report/
+coverage/
+
+# Package lock files (keep these, but ignore if they get corrupted)
+# package-lock.json.bak
+# yarn.lock.bak
