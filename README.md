@@ -81,7 +81,7 @@ npm run lint
 - **Features**:
   - Parallel API and UI testing
   - Coverage reporting with Codecov
-  - Visual regression testing
+  
   - Test artifact uploads
   - Screenshot capture on failures
 
@@ -174,7 +174,7 @@ npm run install:all      # Install all dependencies
 - [ ] Add real database integration
 - [ ] Implement concurrent user support
 - [ ] Add performance testing
-- [ ] Enhance visual regression testing
+
 - [ ] Add accessibility testing
 - [ ] Implement real-time features
 

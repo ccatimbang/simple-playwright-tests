@@ -101,7 +101,7 @@ UI Test Coverage:
 **Why Playwright**:
 - **Cross-browser support**: Chrome, Firefox, Safari
 - **Modern architecture**: Built for modern web apps
-- **Visual testing**: Built-in screenshot and visual regression capabilities
+- **Screenshot capabilities**: Built-in screenshot capture for debugging
 - **Reliability**: Auto-waiting and smart selectors
 - **Performance**: Fast execution with parallel testing (6 workers)
 - **Debugging**: Excellent debugging tools and trace viewer
@@ -264,7 +264,7 @@ client/tests/
 4. **Accessibility Testing**: WCAG compliance testing
 5. **Internationalization**: Multi-language support testing
 6. **Cross-browser Testing**: Enable Firefox and Safari testing
-7. **Visual Regression**: Enhanced visual testing capabilities
+
 8. **API Documentation**: Automated API documentation generation
 
 ## Maintenance & Monitoring
