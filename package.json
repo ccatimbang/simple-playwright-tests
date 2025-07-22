@@ -1,0 +1,45 @@
+{
+  "name": "test-automation-project",
+  "version": "1.0.0",
+  "description": "Comprehensive test automation project with React frontend and Node.js backend",
+  "scripts": {
+    "install:all": "npm install && cd api && npm install && cd ../client && npm install",
+    "start:api": "cd api && npm run dev",
+    "start:client": "cd client && npm start",
+    "test:api": "cd api && npm test",
+    "test:client": "cd client && npm run test:e2e",
+    "test:all": "npm run test:api && npm run test:client",
+    "test:ci": "npm run test:api && npm run test:client",
+    "build": "cd client && npm run build",
+    "dev": "concurrently \"npm run start:api\" \"npm run start:client\"",
+    "setup": "npm run install:all && cd client && npx playwright install --with-deps",
+    "lint": "npm run lint:api && npm run lint:client",
+    "lint:api": "cd api && npm run lint",
+    "lint:client": "cd client && npm run lint",
+    "lint:fix": "npm run lint:fix:api && npm run lint:fix:client",
+    "lint:fix:api": "cd api && npm run lint:fix",
+    "lint:fix:client": "cd client && npm run lint:fix"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/test-automation-project.git"
+  },
+  "keywords": [
+    "test-automation",
+    "playwright",
+    "jest",
+    "react",
+    "nodejs",
+    "api-testing",
+    "ui-testing"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
