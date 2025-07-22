@@ -28,16 +28,6 @@ coverage/
 build/
 public/build/
 
-# Testing
-# Playwright
-test-results/
-playwright-report/
-playwright/.cache/
-
-# Jest
-coverage/
-*.lcov
-
 # IDE
 .vscode/
 .idea/
@@ -69,13 +59,6 @@ api/.env
 # Client specific
 client/build/
 client/.env
-client/coverage/
-
-# Project specific
-# Test artifacts
-tests/test-results/
-tests/playwright-report/
-tests/coverage/
 
 # Local development
 .local/

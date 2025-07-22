@@ -81,9 +81,10 @@ npm run lint
 - **Features**:
   - Parallel API and UI testing
   - Coverage reporting with Codecov
-  
-  - Test artifact uploads
+  - Test artifact uploads with proper path configuration
   - Screenshot capture on failures
+  - Health check endpoints for reliable server startup
+  - Integration tests with separate artifact collection
 
 ### Code Quality Workflows
 - **Lint Workflow**: ESLint checks on both API and client
