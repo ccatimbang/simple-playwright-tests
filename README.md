@@ -67,7 +67,7 @@ npm run lint
 
 ## 🔄 CI/CD Pipeline
 
-### Main CI Workflow (`ci.yml`)
+### Main CI Workflow (`main.yml`)
 - **Triggers**: Pull requests and pushes to main/master
 - **Purpose**: Full CI pipeline with linting, testing, and building
 - **Steps**:
@@ -76,15 +76,12 @@ npm run lint
   3. Build React client
   4. Run E2E tests with Playwright
 
-### Comprehensive Test Workflow (`test.yml`)
-- **Triggers**: Push to main/develop, pull requests
-- **Features**:
-  - Parallel API and UI testing
-  - Coverage reporting with Codecov
-  - Test artifact uploads with proper path configuration
-  - Screenshot capture on failures
-  - Health check endpoints for reliable server startup
-  - Integration tests with separate artifact collection
+### Pipeline Features
+- **Parallel Execution**: API and UI tests run simultaneously
+- **Coverage Reporting**: Integrated with Codecov
+- **Test Artifacts**: Screenshots and reports on failures
+- **Health Checks**: Reliable server startup validation
+- **Dependency Caching**: Optimized for fast builds
 
 ### Code Quality Workflows
 - **Lint Workflow**: ESLint checks on both API and client
@@ -127,12 +124,13 @@ npm run lint
 
 ## 🚨 Known Issues & Limitations
 
-### Current Issues
-- **Flaky Tests**: Todo editing cancel test occasionally times out
+### Current Limitations
 - **Data Persistence**: In-memory storage (resets on server restart)
 - **Single User**: Designed for single-user scenarios
+- **No Real Database**: Uses in-memory arrays
+- **No Concurrent Support**: Single-user application design
 
-### Limitations
+### Technical Constraints
 - No real database integration
 - No concurrent user support
 - No offline functionality
@@ -164,20 +162,20 @@ npm run install:all      # Install all dependencies
 
 ## 📈 Performance Metrics
 
-- **Test Execution**: ~30 seconds for full suite
+- **Test Execution**: ~10 seconds for full suite
 - **API Response Time**: <100ms average
 - **UI Load Time**: <2 seconds
 - **Coverage**: >85% API, comprehensive UI testing
+- **Parallel Workers**: 6 for UI tests
 
 ## 🎯 Future Enhancements
 
-- [ ] Fix flaky tests when running in parallel
 - [ ] Add real database integration
 - [ ] Implement concurrent user support
 - [ ] Add performance testing
-
 - [ ] Add accessibility testing
 - [ ] Implement real-time features
+- [ ] Add API documentation generation
 
 ## 📝 Contributing
 
